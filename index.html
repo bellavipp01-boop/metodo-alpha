@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09040c">
+  <meta name="description" content="Conheça o Método Alpha: desenvolvimento pessoal, confiança e comunicação nos relacionamentos.">
+  <title>Método Alpha — Evolua. Conquiste. Seja livre.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#08040b;--panel:#160b1b;--pink:#ff087e;--pink2:#ff36b0;--purple:#9b25ce;--white:#fff;--muted:#d6cbd8;--gold:#ffc94a}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,Arial,sans-serif;line-height:1.55}
+    body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 0 12%,#6e07504d,transparent 32%),radial-gradient(ellipse at 100% 40%,#4c08754d,transparent 34%),radial-gradient(ellipse at 50% 100%,#70003c2b,transparent 40%)}
+    a{color:inherit;text-decoration:none} .wrap{width:min(1160px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:20;background:#08040beF;backdrop-filter:blur(14px);border-bottom:1px solid #ff168b33}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:900;line-height:1.02;letter-spacing:.03em}.crown{font-size:35px;color:#ff83d0;text-shadow:0 0 18px var(--pink)}
+    .brand span:last-child{font-size:17px}.brand small{display:block;font-size:10px;letter-spacing:.22em;color:#f5b4dc}
+    nav{display:flex;gap:30px;font-size:13px;color:#eee} nav a:hover,nav a.active{color:var(--pink2)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 24px;border:1px solid #ff8bc9;border-radius:999px;background:linear-gradient(100deg,#f00068,#ed159c);box-shadow:0 0 13px #ff087e,0 0 32px #ff087e55;color:white;font-weight:800;font-size:14px;transition:.2s;cursor:pointer}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 0 22px #ff087e,0 0 45px #ff087e88}.btn.small{padding:11px 18px;font-size:12px}
+    .menu{display:none;width:40px;height:40px;background:none;border:0;cursor:pointer;position:relative}.menu::before{content:"";display:block;width:22px;height:16px;margin:auto;border-top:2px solid var(--pink);border-bottom:2px solid var(--pink);background:linear-gradient(var(--pink),var(--pink)) center/100% 2px no-repeat}
+    .hero{min-height:570px;display:grid;grid-template-columns: .92fr 1.08fr;align-items:center;gap:24px;padding:55px 0 46px;position:relative}
+    .eyebrow{font-weight:700;letter-spacing:.09em;font-size:13px;text-transform:uppercase;color:#f6e9f2}.eyebrow:after{content:"";display:inline-block;width:42px;height:2px;background:var(--pink);vertical-align:middle;margin-left:12px}
+    h1{font-size:clamp(38px,5.2vw,66px);line-height:.99;letter-spacing:-.055em;margin:18px 0;font-weight:900;text-transform:uppercase}
+    h1 em,.pink{font-style:normal;color:var(--pink);text-shadow:0 0 22px #ff087e55}
+    .lead{max-width:510px;color:#e6dce6;font-size:16px}.lead strong{color:#ff4fae}
+    .trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:26px;color:#eee;font-size:12px}.trust span{display:flex;align-items:center;gap:8px}.trust b{font-size:22px}
+    .hero-art{height:490px;position:relative;display:flex;align-items:center;justify-content:center}
+    .hero-art:before{content:"";position:absolute;width:82%;height:85%;border-radius:50%;background:#ed078b33;filter:blur(65px)}
+    .hero-photo{position:relative;width:100%;height:100%;object-fit:cover;object-position:center 30%;border-radius:48% 48% 12px 12px;mask-image:linear-gradient(to bottom,#000 75%,transparent 100%);filter:saturate(1.08)}
+    .video-play{position:absolute;top:48%;left:50%;transform:translate(-50%,-50%);width:76px;height:76px;border:2px solid #ff4fb2;border-radius:50%;background:#120716b8;color:white;font-size:30px;box-shadow:0 0 25px var(--pink);cursor:pointer}
+    .video-label{position:absolute;top:60%;left:50%;transform:translateX(-50%);font-size:12px;font-weight:800;white-space:nowrap;text-shadow:0 2px 6px #000}
+    .script{position:absolute;right:-8px;bottom:90px;color:#ff3cb3;font-family:cursive;font-size:27px;line-height:1.15;transform:rotate(-8deg);text-shadow:0 0 15px #ff087e}
+    .section{padding:58px 0;border-top:1px solid #ff168b66;position:relative}
+    .section:before{content:"";position:absolute;top:-2px;left:0;width:100%;height:3px;background:linear-gradient(90deg,transparent,var(--pink),transparent);box-shadow:0 0 16px var(--pink)}
+    .section-title{font-size:clamp(30px,4vw,44px);line-height:1.05;text-transform:uppercase;font-weight:900;letter-spacing:-.04em;margin:0 0 16px}
+    .learn{display:grid;grid-template-columns:1fr .85fr 1fr;gap:30px;align-items:center}
+    .checks{padding:0;margin:22px 0 0;list-style:none}.checks li{margin:9px 0;color:#eee}.checks li:before{content:"✓";display:inline-grid;place-items:center;width:19px;height:19px;margin-right:11px;border-radius:50%;background:var(--pink);font-size:12px;font-weight:900}
+    .portrait{width:100%;height:350px;object-fit:cover;object-position:center;border-radius:18px;filter:contrast(1.05);box-shadow:0 0 38px #9b25ce44}
+    .benefits{display:grid;gap:12px}.benefit{border:1px solid #e344ae99;border-radius:12px;padding:14px 16px;background:linear-gradient(100deg,#220d29,#100711);display:flex;align-items:center;gap:15px;font-size:14px}.benefit b{font-size:27px;color:var(--pink2);width:34px;text-align:center}
+    .transform{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}.beforeafter{display:grid;grid-template-columns:1fr 1fr;overflow:hidden;border:1px solid #eee;border-radius:18px;height:270px}.beforeafter img{width:100%;height:100%;object-fit:cover}.beforeafter img:first-child{filter:grayscale(1) brightness(.75);border-right:2px solid white}
+    .proof{margin-top:20px;border:1px solid var(--pink);border-radius:16px;padding:15px 20px;box-shadow:0 0 20px #ff087e44;font-weight:700}
+    .testimonials{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:26px}.quote{padding:20px 16px;border:1px solid #57204f;border-radius:14px;background:linear-gradient(145deg,#1c0e22,#0d0710);font-size:13px;color:#eee}.person{display:flex;align-items:center;gap:10px;font-weight:700}.avatar{width:42px;height:42px;border-radius:50%;object-fit:cover}.stars{color:var(--gold);letter-spacing:2px;margin:5px 0}.quote p{margin:12px 0 0}
+    .guarantee{display:grid;grid-template-columns:150px 1fr 1fr;gap:28px;align-items:center}.seal{width:135px;height:135px;border:4px double var(--gold);border-radius:50%;display:grid;place-items:center;text-align:center;color:var(--gold);font-weight:900;line-height:1.15;box-shadow:0 0 25px #ffc94a44;transform:rotate(-8deg)}.seal strong{font-size:23px}
+    .faq{border-left:1px solid #65315c;padding-left:26px}.faq h3{margin-top:0;text-transform:uppercase}.faq-item{border-bottom:1px solid #54234d}.faq-q{width:100%;padding:13px 0;background:none;border:0;color:white;text-align:left;display:flex;justify-content:space-between;cursor:pointer;font:600 14px Inter}.faq-a{display:none;color:#d8cbd8;font-size:13px;padding:0 20px 14px 0}.faq-item.open .faq-a{display:block}.faq-q span{color:var(--pink);font-size:20px}
+    .bottom-cta{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:30px 0}.bottom-items{display:flex;gap:25px;flex-wrap:wrap;font-size:13px}.bottom-items span{display:flex;gap:9px;align-items:center}
+    footer{border-top:1px solid #ff168b66;padding:22px 0;color:#bbaebb;font-size:11px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.tagline{color:var(--pink);letter-spacing:.25em;font-weight:800}
+    .modal{display:none;position:fixed;inset:0;background:#000c;z-index:50;align-items:center;justify-content:center;padding:20px}.modal.show{display:flex}.modal-box{max-width:500px;width:100%;background:#170b1c;border:1px solid var(--pink);border-radius:18px;padding:28px;box-shadow:0 0 40px #ff087e55}.modal-box h2{margin-top:0}.close{float:right;background:none;border:0;color:white;font-size:25px;cursor:pointer}
+    @media(max-width:850px){nav{gap:14px}.nav>.btn{display:none}.hero{grid-template-columns:1fr;padding-top:42px}.hero-art{height:390px;grid-row:1}.hero-copy{grid-row:2}.script{right:5px}.learn{grid-template-columns:1fr 1fr}.portrait{display:none}.transform{gap:24px}.testimonials{grid-template-columns:repeat(2,1fr)}.guarantee{grid-template-columns:120px 1fr}.faq{grid-column:1/-1;border-left:0;border-top:1px solid #65315c;padding:20px 0 0}.seal{width:110px;height:110px}}
+    @media(max-width:600px){.nav{height:66px}.menu{display:block}nav{display:none;position:absolute;top:66px;left:0;right:0;background:#100712;padding:20px 5%;flex-direction:column;border-bottom:1px solid #ff168b66}nav.show{display:flex}.hero-art{height:310px}.hero{gap:4px;padding-bottom:35px}.script{font-size:20px;bottom:50px}.trust{gap:13px}.trust span{font-size:11px}.section{padding:42px 0}.learn,.transform{grid-template-columns:1fr}.beforeafter{height:220px}.testimonials{grid-template-columns:1fr}.guarantee{grid-template-columns:1fr;text-align:center}.seal{margin:auto}.faq{text-align:left}.bottom-cta{align-items:flex-start;flex-direction:column}.bottom-items{gap:14px}.bottom-cta .btn{width:100%}.section-title{font-size:32px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#inicio"><span class="crown" aria-hidden="true">A</span><span><small>MÉTODO</small>ALPHA</span></a>
+    <button class="menu" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks"></button>
+    <nav id="navLinks"><a class="active" href="#inicio">Início</a><a href="#beneficios">Benefícios</a><a href="#depoimentos">Depoimentos</a><a href="#garantia">Garantia</a><a href="#faq">FAQ</a></nav>
+    <a class="btn small" href="#acessar"> Acessar Agora</a>
+  </div>
+</header>
+
+<main>
+  <section class="wrap hero" id="inicio">
+    <div class="hero-copy">
+      <div class="eyebrow">Transforme sua vida</div>
+      <h1>Seja o homem<br>que todas elas<br><em>desejam</em></h1>
+      <p class="lead">Aprenda um método completo para desenvolver confiança, melhorar sua comunicação e construir relacionamentos mais saudáveis, com técnicas práticas para o dia a dia.</p>
+      <a class="btn" href="#acessar"> QUERO ACESSAR AGORA <span>›</span></a>
+      <div class="trust"><span><b>✓</b> Compra segura</span><span><b>ϟ</b> Acesso imediato*</span><span><b>✓</b> Suporte</span></div>
+    </div>
+    <div class="hero-art">
+      <img class="hero-photo" src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1100&q=85" alt="Casal em um momento romântico">
+      <button class="video-play" id="videoBtn" aria-label="Abrir apresentação">▶</button><div class="video-label">ASSISTA À APRESENTAÇÃO</div>
+      <div class="script">Conquiste.<br>Conecte-se.<br>Evolua.</div>
+    </div>
+  </section>
+
+  <section class="section" id="beneficios">
+    <div class="wrap learn">
+      <div>
+        <h2 class="section-title">O que você vai<br><span class="pink">aprender?</span></h2>
+        <p class="lead">Um conteúdo direto ao ponto, com estratégias práticas para desenvolver suas habilidades pessoais e sociais.</p>
+        <ul class="checks"><li>Comunicação e conexão</li><li>Autoconfiança e mentalidade</li><li>Como iniciar conversas</li><li>Relacionamentos respeitosos</li></ul>
+      </div>
+      <img class="portrait" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=85" alt="Retrato de um homem confiante">
+      <div class="benefits">
+        <div class="benefit"><b>01</b><span>Construa conexões com mais naturalidade</span></div>
+        <div class="benefit"><b>02</b><span>Desenvolva confiança e segurança</span></div>
+        <div class="benefit"><b>03</b><span>Melhore sua comunicação social</span></div>
+        <div class="benefit"><b>04</b><span>Invista no seu desenvolvimento pessoal</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap transform">
+      <div class="beforeafter">
+        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=650&q=85" alt="Retrato masculino em preto e branco">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=650&q=85" alt="Retrato masculino sorrindo">
+      </div>
+      <div>
+        <h2 class="section-title">Sua transformação<br><span class="pink">começa agora!</span></h2>
+        <p class="lead">Chega de deixar a insegurança decidir por você. Dê o primeiro passo para se comunicar melhor, respeitar seus limites e criar relações mais verdadeiras.</p>
+        <div class="proof">✓ Conteúdo prático para aplicar no seu ritmo, mesmo começando do zero.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="depoimentos">
+    <div class="wrap">
+      <h2 class="section-title" style="text-align:center">Depoimentos <span class="pink">reais*</span></h2>
+      <p style="text-align:center;color:var(--muted);margin-top:-8px">Veja relatos de quem já participou.</p>
+      <div class="testimonials">
+        <article class="quote"><div class="person"><img class="avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt=""><div>Aluno 01<div class="stars">★★★★★</div></div></div><p>“O conteúdo me ajudou a refletir sobre minha comunicação e minhas atitudes.”</p></article>
+        <article class="quote"><div class="person"><img class="avatar" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&q=80" alt=""><div>Aluno 02<div class="stars">★★★★★</div></div></div><p>“Gostei da abordagem direta e dos exercícios práticos.”</p></article>
+        <article class="quote"><div class="person"><img class="avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt=""><div>Aluno 03<div class="stars">★★★★★</div></div></div><p>“Passei a prestar mais atenção na forma como me comunico.”</p></article>
+        <article class="quote"><div class="person"><img class="avatar" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=100&q=80" alt=""><div>Aluno 04<div class="stars">★★★★★</div></div></div><p>“Um material organizado para estudar no meu próprio tempo.”</p></article>
+      </div>
+      <p style="font-size:11px;color:#9e8d9e;text-align:center">*Substitua estes exemplos por avaliações autênticas e autorizadas antes de publicar.</p>
+    </div>
+  </section>
+
+  <section class="section" id="garantia">
+    <div class="wrap guarantee">
+      <div class="seal">GARANTIA<br><strong>7 DIAS</strong><br>✦ ✦ ✦</div>
+      <div><h2 class="section-title" style="font-size:34px">Garantia <span class="pink">incondicional</span></h2><p class="lead">Você tem 7 dias para avaliar o conteúdo. Se a oferta e a plataforma de pagamento oferecerem essa condição, poderá solicitar o reembolso dentro do prazo informado nos termos da compra.</p></div>
+      <div class="faq" id="faq"><h3>Perguntas frequentes</h3>
+        <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-answer-1">Como recebo o acesso? <span aria-hidden="true">+</span></button><div class="faq-a" id="faq-answer-1">Após a confirmação do pagamento, as instruções de acesso serão enviadas pelo canal informado na compra. Configure aqui sua plataforma de entrega.</div></div>
+        <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-answer-2">É seguro comprar? <span aria-hidden="true">+</span></button><div class="faq-a" id="faq-answer-2">A compra deve ser realizada por um checkout confiável. Antes de publicar, insira o link do seu provedor de pagamento e disponibilize os termos da oferta.</div></div>
+        <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-answer-3">Funciona mesmo? <span aria-hidden="true">+</span></button><div class="faq-a" id="faq-answer-3">O material oferece orientações e exercícios. Os resultados dependem da aplicação, do contexto e do desenvolvimento individual de cada aluno.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="acessar">
+    <div class="wrap bottom-cta">
+      <div class="bottom-items"><span>∞ Acesso conforme a oferta</span><span>✓ Pagamento protegido</span><span>☏ Canal de suporte</span></div>
+      <a class="btn" id="checkoutBtn" href="#"> QUERO ACESSAR AGORA ›</a>
+    </div>
+    <div class="wrap" style="text-align:right;color:#bdaebd;font-size:11px"> Compra online — confira os termos antes de finalizar.</div>
+  </section>
+</main>
+
+<footer><div class="wrap foot"><span>© <span id="year"></span> Método Alpha. Todos os direitos reservados.</span><span class="tagline">EVOLUA. CONECTE-SE. SEJA LIVRE.</span></div></footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-box"><button class="close" id="closeModal" aria-label="Fechar">×</button><h2 id="modalTitle">Apresentação do Método Alpha</h2><p>Adicione aqui o endereço do seu vídeo de apresentação (YouTube ou Vimeo) para que ele apareça neste espaço.</p><p style="color:#c8b7c8;font-size:13px">O botão de vídeo está pronto; falta apenas configurar o link do vídeo no arquivo <b>script.js</b>.</p></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
